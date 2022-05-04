@@ -4,6 +4,7 @@ import {
   fontFamily,
   fontSize,
   margin,
+  padding,
 } from '../../assets/constants/theme';
 
 export const styles = StyleSheet.create({
@@ -20,12 +21,27 @@ export const styles = StyleSheet.create({
   },
   profileName: {
     color: colors.black,
-    fontFamily: fontFamily.medium,
+    fontFamily: fontFamily.bold,
     fontSize: fontSize.title,
   },
   profileMessage: {
     color: colors.black,
     fontFamily: fontFamily.regular,
     fontSize: fontSize.text,
+  },
+  coursesContainer: {
+    marginTop: padding.md,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginHorizontal: margin.lg,
+  },
+  title: {
+    color: colors.black,
+    fontFamily: fontFamily.bold,
+    fontSize: fontSize.title,
+  },
+  seeAll: {
+    color: colors.blue,
   },
 });
