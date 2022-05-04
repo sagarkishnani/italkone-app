@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text} from 'react-native';
 import {styles} from './styles';
 import Input from '../../components/atoms/input';
 import Button from '../../components/atoms/button';
@@ -16,15 +16,15 @@ const RegisterScreen = () => {
       />
       <Input
         blurOnSubmit
-        placeholder="Ingrese su correo"
+        placeholder="Ingrese su contraseña"
         placeholderTextColor={'#000000'}
-        returnKeyType="done"
+        secureTextEntry={true}
       />
       <Input
         blurOnSubmit
-        placeholder="Ingrese su correo"
+        placeholder="Confirme su contraseña"
         placeholderTextColor={'#000000'}
-        returnKeyType="done"
+        secureTextEntry={true}
       />
       <Button value={'Regístrate'} />
     </View>

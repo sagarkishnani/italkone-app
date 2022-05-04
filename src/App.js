@@ -1,9 +1,9 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import RegisterScreen from '../screens/register';
+import AppNavigation from '../navigation';
 
 const App = () => {
-  return <RegisterScreen />;
+  return <AppNavigation />;
 };
 
 export default App;

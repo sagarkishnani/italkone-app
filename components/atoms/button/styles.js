@@ -9,7 +9,7 @@ import {
 
 export const styles = StyleSheet.create({
   buttonContainer: {
-    marginVertical: margin.lg,
+    marginVertical: margin.xl,
     marginHorizontal: margin.md,
     backgroundColor: colors.blue,
     borderRadius: 20,
