@@ -1,15 +1,24 @@
 import React from 'react';
-import {View, Text, Image, FlatList} from 'react-native';
-import {COURSES} from '../../../assets/constants/courses';
+import {View, Text, Image, FlatList, TouchableOpacity} from 'react-native';
 import {colors} from '../../../assets/constants/theme';
 import IonicIcons from 'react-native-vector-icons/Ionicons';
 import SearchInput from '../../components/atoms/search';
 import CategoryGrid from '../../components/molecules/category-grid';
+import {selectedCategory} from '../../store/actions/category.action';
+import {selectCourse} from '../../store/actions/course.action';
 import {styles} from '../home/styles';
+import {connect, useDispatch, useSelector} from 'react-redux';
 
-const Home = () => {
-  const courses = COURSES;
-  const renderItem = ({item}) => <CategoryGrid item={item} />;
+const Home = ({navigation}) => {
+  const dispatch = useDispatch();
+  const courses = useSelector(state => state.courses.courses);
+  const handleSelectedCourse = course => {
+    dispatch(selectCourse(course.id));
+    navigation.navigate('Course');
+  };
+  const renderItem = ({item}) => (
+    <CategoryGrid item={item} onSelected={handleSelectedCourse} />
+  );
 
   return (
     <View style={styles.container}>
@@ -30,14 +39,17 @@ const Home = () => {
       <View>
         <View style={styles.coursesContainer}>
           <Text style={styles.title}>Cursos</Text>
-          <Text style={styles.seeAll}>
-            Ver todos
-            <IonicIcons
-              name="ios-chevron-forward"
-              color={colors.blue}
-              size={20}
-            />
-          </Text>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('Category', {name: 'Cursos'})}>
+            <Text style={styles.seeAll}>
+              Ver todos
+              <IonicIcons
+                name="ios-chevron-forward"
+                color={colors.blue}
+                size={20}
+              />
+            </Text>
+          </TouchableOpacity>
         </View>
         <FlatList
           showsHorizontalScrollIndicator={false}
@@ -51,4 +63,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default connect()(Home);

@@ -10,6 +10,7 @@ import {
 export const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.lightblue,
+    paddingTop: padding.lg,
   },
   title: {
     color: colors.black,

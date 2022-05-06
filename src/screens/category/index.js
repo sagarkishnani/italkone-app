@@ -9,7 +9,6 @@ const Category = () => {
   let numColumns = 2;
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Cursos</Text>
       <FlatList
         columnWrapperStyle={{flex: 1, justifyContent: 'space-around'}}
         numColumns={numColumns}

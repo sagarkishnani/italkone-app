@@ -9,9 +9,9 @@ const CategoryGrid = ({item, onSelected}) => {
         style={styles.touchable}
         onPress={() => onSelected(item)}>
         <View style={styles.course}>
-          <Image style={styles.image} source={{uri: `${item.image}`}}></Image>
+          <Image style={styles.image} source={{uri: `${item.image}`}} />
           <View style={styles.courseInfo}>
-            <Text style={styles.subtitle}>{item.description}</Text>
+            <Text style={styles.subtitle}>{item.type}</Text>
             <Text style={styles.title}>{item.name}</Text>
           </View>
         </View>

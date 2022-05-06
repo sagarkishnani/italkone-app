@@ -23,6 +23,7 @@ export const fontSize = {
   title: 24,
   subtitle: 20,
   text: 16,
+  small: 14,
   button: 16,
 };
 
