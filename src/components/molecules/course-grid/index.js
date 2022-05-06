@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, TouchableOpacity, Image} from 'react-native';
 import {styles} from './styles';
 
-const CategoryGrid = ({item, onSelected}) => {
+const CourseGrid = ({item, onSelected}) => {
   return (
     <View style={styles.container}>
       <TouchableOpacity
@@ -20,4 +20,4 @@ const CategoryGrid = ({item, onSelected}) => {
   );
 };
 
-export default CategoryGrid;
+export default CourseGrid;
