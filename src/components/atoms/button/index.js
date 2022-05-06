@@ -1,6 +1,6 @@
 import React from 'react';
 import {TouchableOpacity, Text} from 'react-native';
-import {styles} from '../button/styles';
+import {styles} from './styles';
 
 const Button = ({value}) => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, Image, FlatList} from 'react-native';
-import {COURSES} from '../../assets/constants/courses';
-import {colors} from '../../assets/constants/theme';
+import {COURSES} from '../../../assets/constants/courses';
+import {colors} from '../../../assets/constants/theme';
 import IonicIcons from 'react-native-vector-icons/Ionicons';
 import SearchInput from '../../components/atoms/search';
 import CategoryGrid from '../../components/molecules/category-grid';

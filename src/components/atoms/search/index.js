@@ -1,7 +1,7 @@
 import React from 'react';
 import {TextInput, View} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import {colors} from '../../../assets/constants/theme';
+import {colors} from '../../../../assets/constants/theme';
 import {styles} from './styles';
 
 const SearchInput = ({style, ...props}) => {

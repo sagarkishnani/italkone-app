@@ -5,7 +5,7 @@ import {
   fontSize,
   margin,
   padding,
-} from '../../../assets/constants/theme';
+} from '../../../../assets/constants/theme';
 
 export const styles = StyleSheet.create({
   container: {

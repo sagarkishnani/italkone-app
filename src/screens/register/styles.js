@@ -4,7 +4,7 @@ import {
   fontFamily,
   fontSize,
   margin,
-} from '../../assets/constants/theme';
+} from '../../../assets/constants/theme';
 import {Dimensions} from 'react-native';
 
 const width = Dimensions.get('window').width;

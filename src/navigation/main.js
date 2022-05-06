@@ -2,7 +2,7 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeNavigator from './home';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import {colors} from '../assets/constants/theme';
+import {colors} from '../../assets/constants/theme';
 import CartNavigator from './cart';
 import ChatNavigator from './chat';
 import OrderNavigator from './order';
