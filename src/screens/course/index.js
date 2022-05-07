@@ -4,11 +4,13 @@ import IonicIcons from 'react-native-vector-icons/Ionicons';
 import {connect, useDispatch, useSelector} from 'react-redux';
 import {colors} from '../../../assets/constants/theme';
 import {styles} from './styles';
+import {addItem} from '../../store/actions/cart.action';
 
 const Course = ({navigation}) => {
   const dispatch = useDispatch();
   const course = useSelector(state => state.courses.selectedCourse);
   const {name, image, price, type, description} = course;
+  const handleAddToCart = () => dispatch(addItem(course));
 
   return (
     <View style={styles.container}>
@@ -29,7 +31,9 @@ const Course = ({navigation}) => {
         <Text style={styles.description}>{description}</Text>
       </View>
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => handleAddToCart()}>
           <Text style={styles.buttonText}>Comprar</Text>
         </TouchableOpacity>
       </View>
