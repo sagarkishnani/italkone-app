@@ -1,10 +1,14 @@
 import React from 'react';
-import {View, Text} from 'react-native';
 import {Provider} from 'react-redux';
 import AppNavigation from './navigation';
 import store from './store/index';
+import SplashScreen from 'react-native-splash-screen';
 
 const App = () => {
+  React.useEffect(() => {
+    SplashScreen.hide();
+  });
+
   return (
     <Provider store={store}>
       <AppNavigation />
