@@ -47,4 +47,28 @@ export const COURSES = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
+  {
+    id: 5,
+    category: 1,
+    name: 'Inglés para Finanzas',
+    color: '#49C6E5',
+    price: 820,
+    image:
+      'https://img.freepik.com/psd-gratis/3d-bolsa-verde-dinero-signo-dolar_23-2148938927.jpg?w=740',
+    type: 'Expresión escrita',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    id: 6,
+    category: 1,
+    name: 'Inglés para Matemáticas',
+    color: '#49C6E5',
+    price: 320,
+    image:
+      'https://img.freepik.com/psd-gratis/calculadora-3d-botones_23-2148938932.jpg?w=740',
+    type: 'Expresión escrita',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
 ];

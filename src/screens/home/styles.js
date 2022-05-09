@@ -12,6 +12,11 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: colors.lightblue,
   },
+  image: {
+    height: 80,
+    width: 80,
+    borderRadius: 50,
+  },
   profileContainer: {
     marginVertical: margin.lg,
     marginHorizontal: margin.md,

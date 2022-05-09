@@ -8,7 +8,11 @@ const Stack = createNativeStackNavigator();
 const OrderNavigator = () => {
   return (
     <Stack.Navigator initialRouteName="Order">
-      <Stack.Screen name="Order" component={Order} />
+      <Stack.Screen
+        name="Order"
+        component={Order}
+        options={{headerShown: false}}
+      />
     </Stack.Navigator>
   );
 };

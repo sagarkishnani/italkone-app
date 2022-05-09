@@ -9,7 +9,11 @@ const CategoryNavigator = () => {
     <Stack.Navigator
       initialRouteName="Category"
       screenOptions={{headerShown: false}}>
-      <Stack.Screen name="Category" component={Category} />
+      <Stack.Screen
+        name="Category"
+        component={Category}
+        options={{headerShown: false}}
+      />
     </Stack.Navigator>
   );
 };

@@ -11,7 +11,7 @@ const CourseGrid = ({item, onSelected}) => {
         <View style={styles.course}>
           <Image style={styles.image} source={{uri: `${item.image}`}}></Image>
           <View style={styles.courseInfo}>
-            <Text style={styles.subtitle}>{item.description}</Text>
+            <Text style={styles.subtitle}>{item.type}</Text>
             <Text style={styles.title}>{item.name}</Text>
           </View>
         </View>
